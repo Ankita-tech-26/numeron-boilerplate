@@ -60,6 +60,8 @@ function checkRelation(option) {
 
 // Timer for the game
 var timeLeft = 60; // 60 seconds
+const timerElement = document.getElementById('timer');
+timerElement.style.fontSize = '14px';
 var timer = setInterval(function() {
     document.getElementById('timer').innerText = 'Time Left: ' + timeLeft + ' seconds';
     timeLeft--;
